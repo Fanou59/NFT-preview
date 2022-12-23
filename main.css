@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+html {
+    background-color: #0D192C;
+
+}
+
+body {
+    background-color: #15263F;
+    border-radius: 15px;
+    max-width: 350px;
+}
+
+main {
+    padding: 0 24px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 1.22rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+
+}
+
+p {
+    line-height: 26px;
+}
+
+p,
+.days {
+    color: #8BACD9;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+    align-items: center;
+
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: #00FFF8;
+    font-weight: 600;
+}
+
+.price::before {
+    display: flex;
+    content: url(images/icon-ethereum.svg);
+    margin-right: 6.48px;
+    line-height: 0;
+
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.days::before {
+    display: flex;
+    content: url(images/icon-clock.svg);
+    margin-right: 7.7px;
+    line-height: 0;
+}
+
+hr {
+    height: 1px;
+    background-color: #2E405A;
+    border: none;
+}
+
+span {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px 32px 24px;
+
+}
+
+footer>img {
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 16px;
+
+
+}
