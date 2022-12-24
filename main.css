@@ -37,6 +37,18 @@ h1 {
 
 }
 
+a {
+    text-decoration: none;
+}
+
+h1:hover {
+    color: #00FFF8;
+}
+
+span:hover {
+    color: #00FFF8;
+}
+
 p {
     line-height: 26px;
 }
@@ -97,16 +109,52 @@ span {
     color: white;
 }
 
+
 header {
     display: flex;
     justify-content: center;
     padding: 24px;
+    width: 100%;
+
 }
 
-img {
+/********* Superposition background cyan + Oeil + image *******/
+
+/* Conteneur principal */
+.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+/* Image Equilibrium */
+.overlay-image .image {
+    display: block;
     width: 100%;
     border-radius: 8px;
 }
+
+/********* Hover Oeil *******/
+
+/* Overlay */
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    background-image: url(images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 8px;
+}
+
+/* Apparition overlay Cyan sur passage souris */
+.overlay-image:hover .hover {
+    background-color: #00fff776;
+    opacity: 1;
+}
+
 
 footer {
     display: flex;
@@ -119,7 +167,12 @@ footer>img {
     width: 33px;
     border: 1px solid white;
     border-radius: 50px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
+    margin: 0;
 
 
+}
+
+footer p {
+    margin-left: 16px;
 }
